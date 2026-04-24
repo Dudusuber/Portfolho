@@ -76,7 +76,7 @@ display:block;
 .trimestres{
 display:none;
 gap:10px;
-margin:15px 30px;
+margin:10px 1px;
 flex-wrap:wrap;
 }
 
@@ -138,7 +138,7 @@ transition:max-height .5s ease, opacity .3s ease, padding .3s ease;
 
 
 .trabalho.ativo .conteudo {
-    max-height:500px;
+    max-height:700px;
     padding:20px;
     opacity:1;
 
@@ -172,8 +172,9 @@ h2 {
 .trabalho img {
     width: auto;
     height: auto;
-    max-width: 300px;
-    flex-shrink: 0;
+    max-height: 400px;
+    max-width: 500px;
+    flex-shrink: 1;
     flex-grow: 0;
     border-radius: 10px;
     display: block;
