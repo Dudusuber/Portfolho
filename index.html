@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <header>
+        <h1>Meu Portfólio</h1>
+
+        <nav>
+            <a onclick="trocarPagina('inicio', this)">Início</a>
+            <a onclick="trocarPagina('humanas', this)">Humanas</a>
+            <a onclick="trocarPagina('matematica', this)">Matemática</a>
+            <a onclick="trocarPagina('linguagens', this)">Linguagens</a>
+            <a onclick="trocarPagina('natureza', this)">Natureza</a>
+            <a onclick="trocarPagina('tecnico', this)">Técnico</a>
+        </nav>
+    </header>
+
+    <div class="trimestres">
+        <button onclick="trocarTrimestre('humanas-t1', this)" class="ativo">1º</button>
+        <button onclick="trocarTrimestre('humanas-t2', this)">2º</button>
+        <button onclick="trocarTrimestre('humanas-t3', this)">3º</button>
+    </div>
+
+
+
+    <main>
+    <!-- INICIO -->
+        <section id="inicio" class="pagina ativa">
+            <div class="trabalho">
+                <div class="titulo">Bem-vindo ao meu Portfólio</div>
+
+                <div class="conteudo" style="max-height:100%; opacity:1; padding:20px;">
+                    <p>Aqui você encontrará meus trabalhos organizados por matérias</p>
+                    <p>Todos os trabalhos atualmente são meramente demonstrações do portfólio e não existem. ✏️📄</p>
+                </div>
+            </div>
+            <div class="trabalho" onclick="abrirTrabalho(this)">
+                <div class="titulo">Sobre mim</div>
+
+                <div class="conteudo">
+                    <a href="https://chatgpt.com/" target="_blank">
+                        <img src="img/Estatica.png" width="200">
+                    </a>
+
+                    <div class="descrisao">
+                        <h3>
+                            Sou alguém que adora desafios lógicos e complexos, sempre em busca de resolver problemas através da programação.
+                             Programar é uma paixão que me permite explorar a criatividade e encontrar soluções eficientes.
+                              Nos meus momentos de lazer, posso ser encontrado jogando Factorio, um jogo que considero o melhor, onde a estratégia e a lógica se encontram para criar sistemas complexos.
+                               Além disso, adoro desenhar, adoro jogos indie, onde posso explorar novas ideias e conceitos.
+                                Minha relação com a música é igualmente eclética, pois aprecio muitos gêneros, o que me ajuda a me conectar com diferentes estados de espírito e situações.
+                                 A busca constante por aprimoramento e diversão me guia em todas essas atividades, sempre com a mente aberta para novas descobertas.
+
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- HUMANAS -->
+    <section id="humanas" class="pagina">
+    <div class="trimestres">
+        <button onclick="trocarTrimestre('humanas-t1', this)" class="ativo">1º</button>
+        <button onclick="trocarTrimestre('humanas-t2', this)">2º</button>
+        <button onclick="trocarTrimestre('humanas-t3', this)">3º</button>
+    </div>
+    <h2>Humanas</h2>
+    <!-- 1º TRIMESTRE -->
+    <div id="humanas-t1" class="trimestre ativo">
+        <!--The European Observer-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">The European Observer</div>
+
+            <div class="conteudo">
+                <a href="https://canva.link/p5nm95ep9n4ss0i" target="_blank">
+                    <img src="img/Jornal.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                        Desenvolvemos uma capa de jornal de época no Canva, intitulada The European Observer, ambientada em 1920, assumindo o papel de jornalistas para retratar o cenário europeu após a Primeira Guerra Mundial.
+                        No texto, abordamos as consequências do conflito, como a destruição do continente, a crise econômica e as tensões políticas, além de destacar eventos importantes como o Tratado de Versalhes e a Revolução Russa.
+                        Fizemos isso para aplicar conceitos de geopolítica e transformações globais de forma criativa, simulando o estilo visual e o ponto de vista jornalístico da época, analisando também o fim dos grandes impérios,
+                        o surgimento de novos países e o medo da expansão do socialismo na Europa.
+                        Com essa atividade, aprendemos a construir uma narrativa histórica mais realista e bem estruturada, além de compreender como o contexto político, social e econômico influencia a forma como os acontecimentos são interpretados e apresentados.
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b> C3 H15 H16 H20</h2>
+                </div>
+            </div>
+        </div>
+
+        <!--Geopolítica-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">Geopolítica</div>
+            <div class="conteudo">
+                <a href="https://canva.link/12izbvst2yuooxv" target="_blank">
+                    <img src="img/Bolivia.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                        Iniciamos a aula com atividades lúdicas de geografia e, trabalhando em dupla, buscamos informações atualizadas para elaborar uma apresentação sobre um país escolhido.
+                        A proposta foi introduzir a geopolítica de forma prática e preparar o material para um seminário comparativo entre diferentes nações.
+                        Com essa atividade, desenvolvemos a capacidade de analisar criticamente o papel político e econômico de um país no cenário global, assim como as relações de poder envolvidas.
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b> C1 H1 H2 H3 H4 H5</h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2º TRIMESTRE -->
+    <div id="humanas-t2" class="trimestre">
+        <!--AV1-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV1</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV2-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV2</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3º TRIMESTRE -->
+    <div id="humanas-t3" class="trimestre">
+              <!--AV1-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV1</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV2-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV2</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+
+    <!-- MATEMATICA -->
+    <section id="matematica" class="pagina">
+    <div class="trimestres">
+        <button onclick="trocarTrimestre('matematica-t1', this)" class="ativo">1º</button>
+        <button onclick="trocarTrimestre('matematica-t2', this)">2º</button>
+        <button onclick="trocarTrimestre('matematica-t3', this)">3º</button>
+    </div>
+    <h2>Matemática</h2>
+    <!-- 1º TRIMESTRE -->
+    <div id="matematica-t1" class="trimestre ativo">
+        <!--Filme Quebrando a Banca-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">Filme Quebrando a Banca</div>
+            <div class="conteudo">
+                <a href="https://docs.google.com/document/d/1cFZ_knKiOW-INxf6aMesYG2tX52bheDD0hKIaXjegHk/edit?usp=sharing" target="_blank">
+                    <img src="img/Quebrando a banca.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                        Nesta aula, o filme Quebrando a Banca serviu como exemplo para abordar a probabilidade de forma prática.
+                        A partir da história, debatemos como o uso de cálculos e da análise de possibilidades pode influenciar previsões em jogos e em situações do dia a dia.
+                        Ao final, foi realizada uma atividade inspirada no filme, voltada para a identificação de situações aleatórias e a reflexão sobre riscos presentes no cotidiano.
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b> C5 H30 H31</h2>
+                </div>
+            </div>
+        </div>
+        <!--Jogo Quebrando a Banca-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">Jogo Quebrando a Banca</div>
+            <div class="conteudo">
+                <a href="https://kassinomat.netlify.app/" target="_blank">
+                    <img src="img/c.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b>C5 H30 H31</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2º TRIMESTRE -->
+    <div id="matematica-t2" class="trimestre">
+        <!--AV1-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV1</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV2-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV2</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3º TRIMESTRE -->
+    <div id="matematica-t3" class="trimestre">
+        <!--AV1-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV1</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV2-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV2</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+
+    <!-- LINGUAGENS -->
+    <section id="linguagens" class="pagina">
+    <div class="trimestres">
+        <button onclick="trocarTrimestre('linguagens-t1', this)" class="ativo">1º</button>
+        <button onclick="trocarTrimestre('linguagens-t2', this)">2º</button>
+        <button onclick="trocarTrimestre('linguagens-t3', this)">3º</button>
+    </div>
+    <h2>Linguagens</h2>
+    <!-- 1º TRIMESTRE -->
+    <div id="linguagens-t1" class="trimestre ativo">
+        <!--A Paixão segundo G.H.-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">A Paixão segundo G.H.</div>
+            <div class="conteudo">
+                <a href="https://canva.link/0ob1jdygsqsw6u0" target="_blank">
+                    <img src="img/A paixão segundo G.H.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                        Nesta atividade, analisamos a obra de Clarice Lispector sob perspectivas como sociologia e psicologia. Apesar de compreendermos a leitura, tivemos dificuldades na aplicação prática, o que impactou o resultado final.
+                        A experiência mostrou que precisamos melhorar a organização e a articulação de conceitos complexos.
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b> H4 H22</h2>
+                </div>
+            </div>
+        </div>
+        <!--Game Literário-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">Game Literário</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                        Falar com antonio
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2º TRIMESTRE -->
+    <div id="linguagens-t2" class="trimestre">
+        <!--AV1-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV1</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV2-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV2</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3º TRIMESTRE -->
+    <div id="linguagens-t3" class="trimestre">
+        <!--AV1-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV1</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV2-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV2</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- NATUREZA -->
+    <section id="natureza" class="pagina">
+    <div class="trimestres">
+        <button onclick="trocarTrimestre('natureza-t1', this)" class="ativo">1º</button>
+        <button onclick="trocarTrimestre('natureza-t2', this)">2º</button>
+        <button onclick="trocarTrimestre('natureza-t3', this)">3º</button>
+    </div>
+    <h2>Natureza</h2>
+    <!-- 1º TRIMESTRE -->
+    <div id="natureza-t1" class="trimestre ativo">
+        <!--Meme Evolucionismo-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">Meme Evolucionismo</div>
+            <div class="conteudo">
+                <a href="https://docs.google.com/document/d/1RW5dXX9lqnKWhJji3HEwolXqypSesS-TkHFXbZr8BVw/edit?usp=sharing" target="_blank">
+                    <img src="img/Meme evolusao.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b>C3, H15 e H18</h2>
+                </div>
+            </div>
+        </div>
+        <!--Conflitos e guerras-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">Conflitos e guerras</div>
+            <div class="conteudo">
+                <a href="https://canva.link/aqp3r6b0yluvr1s" target="_blank">
+                    <img src="img/Conflitos e guerras.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                        Desenvolvemos uma atividade no Canva sobre como o petróleo e o combustível influenciam conflitos ao redor do mundo.
+                        O trabalho explicou a importância desses recursos na geopolítica, mostrando como grandes potências disputam reservas e rotas estratégicas, especialmente em regiões como o Oriente Médio.
+                        Com a atividade, entendemos melhor o papel do petróleo nas relações internacionais e como ele pode ser um dos principais fatores de tensões e conflitos entre países.
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b> C1 C2 H9 H11 H1</h2>
+                </div>
+            </div>
+        </div>
+        <!--Relatório-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">Relatório</div>
+            <div class="conteudo">
+                <a href="https://docs.google.com/document/d/1Mu0VMD94Xx-BcrdAIrXChz3CGZAGzLDEzE8zI6UCdOM/edit?usp=sharing" target="_blank">
+                    <img src="img/Eletriza.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                        Realizamos uma atividade prática sobre eletricidade por atrito utilizando materiais simples como balões e pedaços de papel.
+                        O objetivo foi observar como ocorre a eletrização quando dois corpos são atritados.
+                        Durante o experimento, percebemos a transferência de elétrons entre os materiais, o que fez com que eles ficassem carregados eletricamente.
+                        Ao aproximar o balão atritado dos pedaços de papel, observamos a atração entre eles, comprovando a presença da força elétrica.
+                        Com essa atividade, conseguimos entender de forma prática como funciona a eletricidade estática e como a eletrização por atrito ocorre no dia a dia.
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b> C1 H1</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2º TRIMESTRE -->
+    <div id="natureza-t2" class="trimestre">
+        <!--AV1-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV1</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV2-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV2</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3º TRIMESTRE -->
+    <div id="natureza-t3" class="trimestre">
+        <!--AV1-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV1</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV2-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV2</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- TECNICO -->
+    <section id="tecnico" class="pagina">
+    <div class="trimestres">
+        <button onclick="trocarTrimestre('tecnico-t1', this)" class="ativo">1º</button>
+        <button onclick="trocarTrimestre('tecnico-t2', this)">2º</button>
+        <button onclick="trocarTrimestre('tecnico-t3', this)">3º</button>
+    </div>
+    <h2>Técnico</h2>
+    <!-- 1º TRIMESTRE -->
+    <div id="tecnico-t1" class="trimestre ativo">
+        <!--AV1-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV1</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV2-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV2</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2º TRIMESTRE -->
+    <div id="tecnico-t2" class="trimestre">
+        <!--AV1-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV1</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV2-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV2</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3º TRIMESTRE -->
+    <div id="tecnico-t3" class="trimestre">
+        <!--AV1-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV1</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV2-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV2</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+        <!--AV3-->
+        <div class="trabalho" onclick="abrirTrabalho(this)">
+            <div class="titulo">AV3</div>
+            <div class="conteudo">
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="img/Estatica.png" width="200">
+                </a>
+                <div class="descrisao">
+                    <h3>
+                    </h3>
+                    <h2><b>Habilidades Trabalhadas:</b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    </body>
+</html>
