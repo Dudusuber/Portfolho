@@ -1,51 +1,30 @@
-function trocarPagina(id, elemento){
-
-// troca página
-document.querySelectorAll(".pagina")
-.forEach(p => p.classList.remove("ativa"))
-
-document.getElementById(id)
-.classList.add("ativa")
-
-// remove ativo de todos os links
-document.querySelectorAll("nav a")
-.forEach(a => a.classList.remove("ativo"))
-
-// adiciona ativo no clicado
-elemento.classList.add("ativo")
-
+function trocarPagina(id, elemento) {
+    document.querySelectorAll('.pagina').forEach(p => p.classList.remove('ativa'));
+    document.getElementById(id).classList.add('ativa');
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('ativo'));
+    elemento.classList.add('ativo');
+    // fechar sidebar no mobile
+    document.getElementById('sidebar').classList.remove('open');
+    document.getElementById('sidebar-overlay').classList.remove('open');
 }
-
-
-
-function abrirTrabalho(elemento){
-
-document.querySelectorAll(".trabalho")
-.forEach(item=>{
-if(item !== elemento){
-item.classList.remove("ativo")
+ 
+function abrirCard(el) {
+    const jaAberto = el.classList.contains('ativo');
+    document.querySelectorAll('.card').forEach(c => c.classList.remove('ativo'));
+    if (!jaAberto) el.classList.add('ativo');
 }
-})
-
-elemento.classList.toggle("ativo")
-
+ 
+function trocarTrimestre(id, botao) {
+    const pagina = botao.closest('.pagina');
+    pagina.querySelectorAll('.trimestre').forEach(t => t.classList.remove('ativo'));
+    pagina.querySelectorAll('.tab').forEach(b => b.classList.remove('ativo'));
+    document.getElementById(id).classList.add('ativo');
+    botao.classList.add('ativo');
+    // fechar cards ao trocar trimestre
+    document.querySelectorAll('.card').forEach(c => c.classList.remove('ativo'));
 }
-
-
-
-function trocarTrimestre(id, botao){
-
-let pagina = botao.closest(".pagina")
-
-pagina.querySelectorAll(".trimestre")
-.forEach(t => t.classList.remove("ativo"))
-
-pagina.querySelectorAll("#" + id)
-.forEach(t => t.classList.add("ativo"))
-
-pagina.querySelectorAll(".trimestres button")
-.forEach(btn => btn.classList.remove("ativo"))
-
-botao.classList.add("ativo")
-
+ 
+function toggleMenu() {
+    document.getElementById('sidebar').classList.toggle('open');
+    document.getElementById('sidebar-overlay').classList.toggle('open');
 }

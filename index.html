@@ -1,789 +1,471 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfólio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-
-    <header>
-        <h1>Meu Portfólio</h1>
-
-        <nav>
-            <a onclick="trocarPagina('inicio', this)">Início</a>
-            <a onclick="trocarPagina('humanas', this)">Humanas</a>
-            <a onclick="trocarPagina('matematica', this)">Matemática</a>
-            <a onclick="trocarPagina('linguagens', this)">Linguagens</a>
-            <a onclick="trocarPagina('natureza', this)">Natureza</a>
-            <a onclick="trocarPagina('tecnico', this)">Técnico</a>
-        </nav>
-    </header>
-
-    <div class="trimestres">
-        <button onclick="trocarTrimestre('humanas-t1', this)" class="ativo">1º</button>
-        <button onclick="trocarTrimestre('humanas-t2', this)">2º</button>
-        <button onclick="trocarTrimestre('humanas-t3', this)">3º</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio · Eduardo Romeiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<button id="menu-btn" onclick="toggleMenu()">☰</button>
+<div id="sidebar-overlay" onclick="toggleMenu()"></div>
+ 
+<!-- SIDEBAR -->
+<aside id="sidebar">
+    <div class="logo">
+        <div class="logo-name">Eduardo Romeiro<br>Struffaldi</div>
+        <div class="logo-tag">// portfólio</div>
     </div>
-
-
-    <main>
-    <!-- INICIO -->
-    <section id="inicio" class="pagina ativa">
-        <div class="trabalho">
-            <div class="titulo">Eduardo Romeiro Struffaldi</div>
-
-            <div class="conteudo" style="max-height:100%; opacity:1; padding:20px;">
-                <p>Aqui você encontrará meus trabalhos organizados por matérias</p>
-                <p>
-                    A parte visual será trabalhada futuramente, assim como a estrutura, com melhorias na interface e na estética, visando proporcionar uma experiência mais agradável e intuitiva.
-                </p>
+    <nav>
+        <a onclick="trocarPagina('inicio', this)" class="ativo">
+            <span class="nav-icon">⌂</span> Início
+        </a>
+        <a onclick="trocarPagina('humanas', this)">
+            <span class="nav-icon">🌍</span> Humanas
+        </a>
+        <a onclick="trocarPagina('matematica', this)">
+            <span class="nav-icon">∑</span> Matemática
+        </a>
+        <a onclick="trocarPagina('linguagens', this)">
+            <span class="nav-icon">✦</span> Linguagens
+        </a>
+        <a onclick="trocarPagina('natureza', this)">
+            <span class="nav-icon">⚗</span> Natureza
+        </a>
+        <a onclick="trocarPagina('tecnico', this)">
+            <span class="nav-icon">⌨</span> Técnico
+        </a>
+    </nav>
+    <div class="sidebar-footer">
+        © 2026 Eduardo Romeiro<br>
+        Todos os direitos reservados
+    </div>
+</aside>
+ 
+<!-- CONTENT -->
+<div id="content">
+ 
+<!-- ── INÍCIO ── -->
+<section id="inicio" class="pagina ativa">
+    <div class="home-hero">
+        <div class="home-greeting">// bem-vindo ao meu portfólio</div>
+        <h1 class="home-name">Eduardo<br><span>Romeiro.</span></h1>
+        <p class="home-bio">
+            Aqui você encontrará meus trabalhos organizados por matérias.
+        </p>
+        <div class="home-stats">
+            <div class="stat">
+                <span class="stat-num">11</span>
+                <span class="stat-label">TRABALHOS</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">01</span>
+                <span class="stat-label">TRIMESTRES</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num"></span>
+                <span class="stat-label"></span>
             </div>
         </div>
-        <!--Sobre mim-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">Sobre mim</div>
-
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-
-                <div class="descrisao">
-                    <h3>
-                        Sou alguém que adora desafios lógicos e complexos, sempre em busca de resolver problemas através da programação.
-                            Programar é uma paixão que me permite explorar a criatividade e encontrar soluções eficientes.
-                            Nos meus momentos de lazer, posso ser encontrado jogando Factorio, um jogo que considero o melhor, onde a estratégia e a lógica se encontram para criar sistemas complexos.
-                            Além disso, adoro desenhar, adoro jogos indie, onde posso explorar novas ideias e conceitos.
-                            Minha relação com a música é igualmente eclética, pois aprecio muitos gêneros, o que me ajuda a me conectar com diferentes estados de espírito e situações.
-                                A busca constante por aprimoramento e diversão me guia em todas essas atividades, sempre com a mente aberta para novas descobertas.
-
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <!-- HUMANAS -->
-    <section id="humanas" class="pagina">
-    <div class="trimestres">
-        <button onclick="trocarTrimestre('humanas-t1', this)" class="ativo">1º</button>
-        <button onclick="trocarTrimestre('humanas-t2', this)">2º</button>
-        <button onclick="trocarTrimestre('humanas-t3', this)">3º</button>
     </div>
-    <h2>Humanas</h2>
-    <!-- 1º TRIMESTRE -->
+ 
+    <div class="divider"></div>
+ 
+    <div class="about-card">
+        <h2>// SOBRE MIM</h2>
+        <p>
+            Sou alguém que adora desafios lógicos e complexos, sempre em busca de resolver problemas através da programação.
+            Programar é uma paixão que me permite explorar a criatividade e encontrar soluções eficientes.
+            Nos meus momentos de lazer, posso ser encontrado jogando Factorio — um jogo onde estratégia e lógica se encontram para criar sistemas complexos.
+            Adoro desenhar, aprecio jogos indie e me conecto com a música de forma eclética.
+            A busca constante por aprimoramento me guia em todas essas atividades.
+        </p>
+        <div class="interests">
+            <span class="pill">🎮 Factorio</span>
+            <span class="pill">💻 Programação</span>
+            <span class="pill">🎨 Desenho</span>
+            <span class="pill">🎵 Música</span>
+            <span class="pill">🕹 Jogos Indie</span>
+            <span class="pill">🔧 Lógica</span>
+        </div>
+    </div>
+</section>
+ 
+ 
+<!-- ── HUMANAS ── -->
+<section id="humanas" class="pagina">
+    <div class="page-header">
+        <div class="page-title">Ciências <span>Humanas</span></div>
+    </div>
+    <div class="tabs">
+        <button class="tab ativo" onclick="trocarTrimestre('humanas-t1', this)">1º Trimestre</button>
+        <button class="tab" onclick="trocarTrimestre('humanas-t2', this)">2º Trimestre</button>
+        <button class="tab" onclick="trocarTrimestre('humanas-t3', this)">3º Trimestre</button>
+    </div>
+ 
     <div id="humanas-t1" class="trimestre ativo">
-        <!--The European Observer-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">The European Observer</div>
-
-            <div class="conteudo">
-                <a href="https://canva.link/p5nm95ep9n4ss0i" target="_blank">
-                    <img src="img/Jornal.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                        Desenvolvemos uma capa de jornal de época no Canva, intitulada The European Observer, ambientada em 1920, assumindo o papel de jornalistas para retratar o cenário europeu após a Primeira Guerra Mundial.
-                        No texto, abordamos as consequências do conflito, como a destruição do continente, a crise econômica e as tensões políticas, além de destacar eventos importantes como o Tratado de Versalhes e a Revolução Russa.
-                        Fizemos isso para aplicar conceitos de geopolítica e transformações globais de forma criativa, simulando o estilo visual e o ponto de vista jornalístico da época, analisando também o fim dos grandes impérios,
-                        o surgimento de novos países e o medo da expansão do socialismo na Europa.
-                        Com essa atividade, aprendemos a construir uma narrativa histórica mais realista e bem estruturada, além de compreender como o contexto político, social e econômico influencia a forma como os acontecimentos são interpretados e apresentados.
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b> C3 H15 H16 H20</h2>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">The European Observer</span>
+                    <a class="card-img-wrap" href="https://canva.link/p5nm95ep9n4ss0i" target="_blank">
+                        <img src="img/Jornal.png" alt="The European Observer">
+                    </a>
+                    <span class="card-chevron">⌄</span>
                 </div>
+                <div class="card-body"><div class="card-body-inner">
+                    
+                    <p class="card-desc">
+                        Desenvolvemos uma capa de jornal de época no Canva, intitulada <em>The European Observer</em>, ambientada em 1920, assumindo o papel de jornalistas para retratar o cenário europeu após a Primeira Guerra Mundial.
+                        Abordamos consequências do conflito como a destruição do continente, a crise econômica e as tensões políticas, além do Tratado de Versalhes e a Revolução Russa.
+                        Aprendemos a construir uma narrativa histórica mais realista, compreendendo como o contexto político, social e econômico influencia a forma como os acontecimentos são interpretados.
+                    </p>
+                    <div class="skills-tag"><strong>Habilidades:</strong> C3 · H15 · H16 · H20</div>
+                    <a class="card-link" href="https://canva.link/p5nm95ep9n4ss0i" target="_blank">↗ Ver projeto</a>
+                </div></div>
             </div>
-        </div>
-
-        <!--Geopolítica-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">Geopolítica</div>
-            <div class="conteudo">
-                <a href="https://canva.link/12izbvst2yuooxv" target="_blank">
-                    <img src="img/Bolivia.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                        Iniciamos a aula com atividades lúdicas de geografia e, trabalhando em dupla, buscamos informações atualizadas para elaborar uma apresentação sobre um país escolhido.
-                        A proposta foi introduzir a geopolítica de forma prática e preparar o material para um seminário comparativo entre diferentes nações.
-                        Com essa atividade, desenvolvemos a capacidade de analisar criticamente o papel político e econômico de um país no cenário global, assim como as relações de poder envolvidas.
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b> C1 H1 H2 H3 H4 H5</h2>
+ 
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">Geopolítica</span>
+                    <a class="card-img-wrap" href="https://canva.link/12izbvst2yuooxv" target="_blank">
+                        <img src="img/Bolivia.png" alt="Geopolítica">
+                    </a>
+                    <span class="card-chevron">⌄</span>
                 </div>
+                <div class="card-body"><div class="card-body-inner">
+                    <p class="card-desc">
+                        Iniciamos com atividades lúdicas de geografia e, trabalhando em dupla, elaboramos uma apresentação sobre um país escolhido para um seminário comparativo entre nações.
+                        Desenvolvemos a capacidade de analisar criticamente o papel político e econômico de um país no cenário global, assim como as relações de poder envolvidas.
+                    </p>
+                    <div class="skills-tag"><strong>Habilidades:</strong> C1 · H1 · H2 · H3 · H4 · H5</div>
+                    <a class="card-link" href="https://canva.link/12izbvst2yuooxv" target="_blank">↗ Ver projeto</a>
+                </div></div>
             </div>
-        </div>
-        <!--AV3-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV3</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
+ 
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">AV3</span>
+                    <img src="img/Estatica.png" alt="AV3">
+                    <span class="card-chevron">⌄</span>
                 </div>
+                <div class="card-body"><div class="card-body-inner">
+                    <p class="card-desc">Em breve.</p>
+                    <div class="skills-tag"><strong>Habilidades:</strong> —</div>
+                </div></div>
             </div>
         </div>
     </div>
-    <!-- 2º TRIMESTRE -->
+ 
     <div id="humanas-t2" class="trimestre">
-        <!--AV1-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV1</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV2-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV2</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV3-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV3</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV1</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV1"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV2</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV2"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV3</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV3"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
         </div>
     </div>
-    <!-- 3º TRIMESTRE -->
+ 
     <div id="humanas-t3" class="trimestre">
-              <!--AV1-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV1</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV2-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV2</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV3-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV3</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV1</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV1"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV2</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV2"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV3</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV3"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
         </div>
     </div>
+</section>
+ 
+ 
+<!-- ── MATEMÁTICA ── -->
+<section id="matematica" class="pagina">
+    <div class="page-header">
+        <div class="page-title"><span>Matemática</span></div>
     </div>
-    </section>
-
-
-    <!-- MATEMATICA -->
-    <section id="matematica" class="pagina">
-    <div class="trimestres">
-        <button onclick="trocarTrimestre('matematica-t1', this)" class="ativo">1º</button>
-        <button onclick="trocarTrimestre('matematica-t2', this)">2º</button>
-        <button onclick="trocarTrimestre('matematica-t3', this)">3º</button>
+    <div class="tabs">
+        <button class="tab ativo" onclick="trocarTrimestre('matematica-t1', this)">1º Trimestre</button>
+        <button class="tab" onclick="trocarTrimestre('matematica-t2', this)">2º Trimestre</button>
+        <button class="tab" onclick="trocarTrimestre('matematica-t3', this)">3º Trimestre</button>
     </div>
-    <h2>Matemática</h2>
-    <!-- 1º TRIMESTRE -->
+ 
     <div id="matematica-t1" class="trimestre ativo">
-        <!--Filme Quebrando a Banca-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">Filme Quebrando a Banca</div>
-            <div class="conteudo">
-                <a href="https://docs.google.com/document/d/1cFZ_knKiOW-INxf6aMesYG2tX52bheDD0hKIaXjegHk/edit?usp=sharing" target="_blank">
-                    <img src="img/Quebrando a banca.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                        Nesta aula, o filme Quebrando a Banca serviu como exemplo para abordar a probabilidade de forma prática.
-                        A partir da história, debatemos como o uso de cálculos e da análise de possibilidades pode influenciar previsões em jogos e em situações do dia a dia.
-                        Ao final, foi realizada uma atividade inspirada no filme, voltada para a identificação de situações aleatórias e a reflexão sobre riscos presentes no cotidiano.
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b> C5 H30 H31</h2>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">Filme Quebrando a Banca</span>
+                    <a class="card-img-wrap" href="https://docs.google.com/document/d/1cFZ_knKiOW-INxf6aMesYG2tX52bheDD0hKIaXjegHk/edit?usp=sharing" target="_blank">
+                        <img src="img/Quebrando a banca.png" alt="Quebrando a Banca">
+                    </a>
+                    <span class="card-chevron">⌄</span>
                 </div>
+                <div class="card-body"><div class="card-body-inner">
+                    <p class="card-desc">
+                        O filme <em>Quebrando a Banca</em> serviu como exemplo para abordar a probabilidade de forma prática.
+                        Debatemos como o uso de cálculos e análise de possibilidades pode influenciar previsões em jogos e no cotidiano.
+                        Ao final, realizamos uma atividade voltada para identificação de situações aleatórias e reflexão sobre riscos.
+                    </p>
+                    <div class="skills-tag"><strong>Habilidades:</strong> C5 · H30 · H31</div>
+                    <a class="card-link" href="https://docs.google.com/document/d/1cFZ_knKiOW-INxf6aMesYG2tX52bheDD0hKIaXjegHk/edit?usp=sharing" target="_blank">↗ Ver documento</a>
+                </div></div>
             </div>
-        </div>
-        <!--Jogo Quebrando a Banca-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">Jogo Quebrando a Banca</div>
-            <div class="conteudo">
-                <a href="https://kassinomat.netlify.app/" target="_blank">
-                    <img src="img/Cassino.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b>C5 H30 H31</h2>
+ 
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">Jogo Quebrando a Banca</span>
+                    <a class="card-img-wrap" href="https://kassinomat.netlify.app/" target="_blank">
+                        <img src="img/Cassino.png" alt="Jogo Cassino">
+                    </a>
+                    <span class="card-chevron">⌄</span>
                 </div>
+                <div class="card-body"><div class="card-body-inner">
+                    <p class="card-desc">Jogo interativo desenvolvido como extensão prática das aulas de probabilidade.</p>
+                    <div class="skills-tag"><strong>Habilidades:</strong> C5 · H30 · H31</div>
+                    <a class="card-link" href="https://kassinomat.netlify.app/" target="_blank">↗ Jogar</a>
+                </div></div>
             </div>
         </div>
     </div>
-    <!-- 2º TRIMESTRE -->
+ 
     <div id="matematica-t2" class="trimestre">
-        <!--AV1-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV1</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV2-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV2</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV3-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV3</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV1</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV1"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV2</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV2"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV3</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV3"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
         </div>
     </div>
-    <!-- 3º TRIMESTRE -->
+ 
     <div id="matematica-t3" class="trimestre">
-        <!--AV1-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV1</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV2-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV2</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV3-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV3</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV1</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV1"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV2</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV2"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV3</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV3"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
         </div>
     </div>
+</section>
+ 
+ 
+<!-- ── LINGUAGENS ── -->
+<section id="linguagens" class="pagina">
+    <div class="page-header">
+        <div class="page-title">Linguagens <span>&amp; Códigos</span></div>
     </div>
-    </section>
-
-
-    <!-- LINGUAGENS -->
-    <section id="linguagens" class="pagina">
-    <div class="trimestres">
-        <button onclick="trocarTrimestre('linguagens-t1', this)" class="ativo">1º</button>
-        <button onclick="trocarTrimestre('linguagens-t2', this)">2º</button>
-        <button onclick="trocarTrimestre('linguagens-t3', this)">3º</button>
+    <div class="tabs">
+        <button class="tab ativo" onclick="trocarTrimestre('linguagens-t1', this)">1º Trimestre</button>
+        <button class="tab" onclick="trocarTrimestre('linguagens-t2', this)">2º Trimestre</button>
+        <button class="tab" onclick="trocarTrimestre('linguagens-t3', this)">3º Trimestre</button>
     </div>
-    <h2>Linguagens</h2>
-    <!-- 1º TRIMESTRE -->
+ 
     <div id="linguagens-t1" class="trimestre ativo">
-        <!--A Paixão segundo G.H.-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">A Paixão segundo G.H.</div>
-            <div class="conteudo">
-                <a href="https://canva.link/0ob1jdygsqsw6u0" target="_blank">
-                    <img src="img/A paixão segundo G.H.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                        Nesta atividade, analisamos a obra de Clarice Lispector sob perspectivas como sociologia e psicologia. Apesar de compreendermos a leitura, tivemos dificuldades na aplicação prática, o que impactou o resultado final.
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">A Paixão segundo G.H.</span>
+                    <a class="card-img-wrap" href="https://canva.link/0ob1jdygsqsw6u0" target="_blank">
+                        <img src="img/A paixão segundo G.H.png" alt="A Paixão segundo G.H.">
+                    </a>
+                    <span class="card-chevron">⌄</span>
+                </div>
+                <div class="card-body"><div class="card-body-inner">
+                    <p class="card-desc">
+                        Analisamos a obra de Clarice Lispector sob perspectivas como sociologia e psicologia. Apesar de compreendermos a leitura, tivemos dificuldades na aplicação prática, o que impactou o resultado final.
                         A experiência mostrou que precisamos melhorar a organização e a articulação de conceitos complexos.
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b> H4 H22</h2>
-                </div>
+                    </p>
+                    <div class="skills-tag"><strong>Habilidades:</strong> H4 · H22</div>
+                    <a class="card-link" href="https://canva.link/0ob1jdygsqsw6u0" target="_blank">↗ Ver projeto</a>
+                </div></div>
             </div>
-        </div>
-        <!--Game Literário-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">Game Literário</div>
-            <div class="conteudo">
-                <a href="https://wordwall.net/pt/resource/108144808/parnasianismo" target="_blank">
-                    <img src="img/Game literario.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                        ...
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
+ 
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">Game Literário</span>
+                    <a class="card-img-wrap" href="https://wordwall.net/pt/resource/108144808/parnasianismo" target="_blank">
+                        <img src="img/Game literario.png" alt="Game Literário">
+                    </a>
+                    <span class="card-chevron">⌄</span>
                 </div>
+                <div class="card-body"><div class="card-body-inner">
+                    <p class="card-desc">Atividade gamificada sobre Parnasianismo desenvolvida no Wordwall.</p>
+                    <div class="skills-tag"><strong>Habilidades:</strong> —</div>
+                    <a class="card-link" href="https://wordwall.net/pt/resource/108144808/parnasianismo" target="_blank">↗ Jogar</a>
+                </div></div>
             </div>
         </div>
     </div>
-
-    <!-- 2º TRIMESTRE -->
+ 
     <div id="linguagens-t2" class="trimestre">
-        <!--AV1-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV1</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV2-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV2</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV3-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV3</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV1</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV1"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV2</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV2"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV3</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV3"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
         </div>
     </div>
-
-    <!-- 3º TRIMESTRE -->
+ 
     <div id="linguagens-t3" class="trimestre">
-        <!--AV1-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV1</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV2-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV2</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV3-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV3</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV1</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV1"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV2</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV2"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV3</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV3"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
         </div>
     </div>
-    </section>
-
-
-    <!-- NATUREZA -->
-    <section id="natureza" class="pagina">
-    <div class="trimestres">
-        <button onclick="trocarTrimestre('natureza-t1', this)" class="ativo">1º</button>
-        <button onclick="trocarTrimestre('natureza-t2', this)">2º</button>
-        <button onclick="trocarTrimestre('natureza-t3', this)">3º</button>
+</section>
+ 
+ 
+<!-- ── NATUREZA ── -->
+<section id="natureza" class="pagina">
+    <div class="page-header">
+        <div class="page-title">Ciências da <span>Natureza</span></div>
     </div>
-    <h2>Natureza</h2>
-    <!-- 1º TRIMESTRE -->
+    <div class="tabs">
+        <button class="tab ativo" onclick="trocarTrimestre('natureza-t1', this)">1º Trimestre</button>
+        <button class="tab" onclick="trocarTrimestre('natureza-t2', this)">2º Trimestre</button>
+        <button class="tab" onclick="trocarTrimestre('natureza-t3', this)">3º Trimestre</button>
+    </div>
+ 
     <div id="natureza-t1" class="trimestre ativo">
-        <!--Meme Evolucionismo-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">Meme Evolucionismo</div>
-            <div class="conteudo">
-                <a href="https://docs.google.com/document/d/1RW5dXX9lqnKWhJji3HEwolXqypSesS-TkHFXbZr8BVw/edit?usp=sharing" target="_blank">
-                    <img src="img/Meme evolusao.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                        Foi realizada a criação de um meme sobre evolucionismo, apresentado em forma de imagem,
-                         com o objetivo de representar de maneira criativa um conceito relacionado ao tema estudado.
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b>C3, H15 e H18</h2>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">Meme Evolucionismo</span>
+                    <a class="card-img-wrap" href="https://docs.google.com/document/d/1RW5dXX9lqnKWhJji3HEwolXqypSesS-TkHFXbZr8BVw/edit?usp=sharing" target="_blank">
+                        <img src="img/Meme evolusao.png" alt="Meme Evolucionismo">
+                    </a>
+                    <span class="card-chevron">⌄</span>
                 </div>
+                <div class="card-body"><div class="card-body-inner">
+                    <p class="card-desc">
+                        Criação de um meme sobre evolucionismo, apresentado em forma de imagem, com o objetivo de representar de maneira criativa um conceito relacionado ao tema estudado.
+                    </p>
+                    <div class="skills-tag"><strong>Habilidades:</strong> C3 · H15 · H18</div>
+                    <a class="card-link" href="https://docs.google.com/document/d/1RW5dXX9lqnKWhJji3HEwolXqypSesS-TkHFXbZr8BVw/edit?usp=sharing" target="_blank">↗ Ver documento</a>
+                </div></div>
             </div>
-        </div>
-        <!--Conflitos e guerras-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">Conflitos e guerras</div>
-            <div class="conteudo">
-                <a href="https://canva.link/aqp3r6b0yluvr1s" target="_blank">
-                    <img src="img/Conflitos e guerras.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                        Desenvolvemos uma atividade no Canva sobre como o petróleo e o combustível influenciam conflitos ao redor do mundo.
-                        O trabalho explicou a importância desses recursos na geopolítica, mostrando como grandes potências disputam reservas e rotas estratégicas, especialmente em regiões como o Oriente Médio.
-                        Com a atividade, entendemos melhor o papel do petróleo nas relações internacionais e como ele pode ser um dos principais fatores de tensões e conflitos entre países.
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b> C1 C2 H9 H11 H1</h2>
+ 
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">Conflitos e Guerras</span>
+                    <a class="card-img-wrap" href="https://canva.link/aqp3r6b0yluvr1s" target="_blank">
+                        <img src="img/Conflitos e guerras.png" alt="Conflitos e Guerras">
+                    </a>
+                    <span class="card-chevron">⌄</span>
                 </div>
+                <div class="card-body"><div class="card-body-inner">
+                    <p class="card-desc">
+                        Atividade no Canva sobre como o petróleo e o combustível influenciam conflitos ao redor do mundo.
+                        Explicamos a importância desses recursos na geopolítica, mostrando como grandes potências disputam reservas e rotas estratégicas, especialmente no Oriente Médio.
+                    </p>
+                    <div class="skills-tag"><strong>Habilidades:</strong> C1 · C2 · H9 · H11 · H1</div>
+                    <a class="card-link" href="https://canva.link/aqp3r6b0yluvr1s" target="_blank">↗ Ver projeto</a>
+                </div></div>
             </div>
-        </div>
-        <!--Relatório-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">Relatório</div>
-            <div class="conteudo">
-                <a href="https://docs.google.com/document/d/1Mu0VMD94Xx-BcrdAIrXChz3CGZAGzLDEzE8zI6UCdOM/edit?usp=sharing" target="_blank">
-                    <img src="img/Eletriza.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                        Realizamos uma atividade prática sobre eletricidade por atrito utilizando materiais simples como balões e pedaços de papel.
-                        O objetivo foi observar como ocorre a eletrização quando dois corpos são atritados.
-                        Durante o experimento, percebemos a transferência de elétrons entre os materiais, o que fez com que eles ficassem carregados eletricamente.
-                        Ao aproximar o balão atritado dos pedaços de papel, observamos a atração entre eles, comprovando a presença da força elétrica.
-                        Com essa atividade, conseguimos entender de forma prática como funciona a eletricidade estática e como a eletrização por atrito ocorre no dia a dia.
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b> C1 H1</h2>
+ 
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">Relatório — Eletrostática</span>
+                    <a class="card-img-wrap" href="https://docs.google.com/document/d/1Mu0VMD94Xx-BcrdAIrXChz3CGZAGzLDEzE8zI6UCdOM/edit?usp=sharing" target="_blank">
+                        <img src="img/Eletriza.png" alt="Relatório Eletrostática">
+                    </a>
+                    <span class="card-chevron">⌄</span>
                 </div>
+                <div class="card-body"><div class="card-body-inner">
+                    <p class="card-desc">
+                        Atividade prática sobre eletricidade por atrito utilizando balões e pedaços de papel.
+                        Observamos a transferência de elétrons e a atração eletrostática, compreendendo na prática como funciona a eletrização por atrito no dia a dia.
+                    </p>
+                    <div class="skills-tag"><strong>Habilidades:</strong> C1 · H1</div>
+                    <a class="card-link" href="https://docs.google.com/document/d/1Mu0VMD94Xx-BcrdAIrXChz3CGZAGzLDEzE8zI6UCdOM/edit?usp=sharing" target="_blank">↗ Ver relatório</a>
+                </div></div>
             </div>
         </div>
     </div>
-    <!-- 2º TRIMESTRE -->
+ 
     <div id="natureza-t2" class="trimestre">
-        <!--AV1-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV1</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV2-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV2</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV3-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV3</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV1</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV1"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV2</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV2"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV3</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV3"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
         </div>
     </div>
-    <!-- 3º TRIMESTRE -->
+ 
     <div id="natureza-t3" class="trimestre">
-        <!--AV1-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV1</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV2-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV2</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV3-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV3</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV1</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV1"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV2</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV2"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV3</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV3"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
         </div>
     </div>
-    </section>
-
-
-    <!-- TECNICO -->
-    <section id="tecnico" class="pagina">
-    <div class="trimestres">
-        <button onclick="trocarTrimestre('tecnico-t1', this)" class="ativo">1º</button>
-        <button onclick="trocarTrimestre('tecnico-t2', this)">2º</button>
-        <button onclick="trocarTrimestre('tecnico-t3', this)">3º</button>
+</section>
+ 
+ 
+<!-- ── TÉCNICO ── -->
+<section id="tecnico" class="pagina">
+    <div class="page-header">
+        <div class="page-title">Curso <span>Técnico</span></div>
     </div>
-    <h2>Técnico</h2>
-    <!-- 1º TRIMESTRE -->
+    <div class="tabs">
+        <button class="tab ativo" onclick="trocarTrimestre('tecnico-t1', this)">1º Trimestre</button>
+        <button class="tab" onclick="trocarTrimestre('tecnico-t2', this)">2º Trimestre</button>
+        <button class="tab" onclick="trocarTrimestre('tecnico-t3', this)">3º Trimestre</button>
+    </div>
+ 
     <div id="tecnico-t1" class="trimestre ativo">
-        <!--Mentalize-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">Mentalize</div>
-            <div class="conteudo">
-                <a href="https://canva.link/rqutzrfqqi1l6xk" target="_blank">
-                    <img src="img/Mentalize.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Dox:<a href="https://docs.google.com/document/d/16ynkchNP-eMK60iwXcLMSn0ZsA7mvNH80HdzMIrkciw/edit?tab=t.0" target="_blank">*</a></h2>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">Mentalize</span>
+                    <a class="card-img-wrap" href="https://canva.link/rqutzrfqqi1l6xk" target="_blank">
+                        <img src="img/Mentalize.png" alt="Mentalize">
+                    </a>
+                    <span class="card-chevron">⌄</span>
                 </div>
+                <div class="card-body"><div class="card-body-inner">
+                    
+                    <p class="card-desc">Projeto desenvolvido no curso técnico.</p>
+                    <div class="skills-tag"><strong>Documentação:</strong> disponível</div>
+                    <div style="display:flex;gap:8px;flex-wrap:wrap">
+                        <a class="card-link" href="https://canva.link/rqutzrfqqi1l6xk" target="_blank">↗ Ver projeto</a>
+                        <a class="card-link" href="https://docs.google.com/document/d/16ynkchNP-eMK60iwXcLMSn0ZsA7mvNH80HdzMIrkciw/edit?tab=t.0" target="_blank">↗ Documentação</a>
+                    </div>
+                </div></div>
             </div>
-        </div>
-        <!--Grand Prix-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">Grand Prix</div>
-            <div class="conteudo">
-                <a href="https://docs.google.com/document/d/1g6xpgjGblsisz6WOIvfAjcORnT2F8TtlkwaObCe58R8/edit?usp=sharing" target="_blank">
-                    <img src="img/Grand Prix.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
+ 
+            <div class="card" onclick="abrirCard(this)">
+                <div class="card-header">
+                    <span class="card-title">Grand Prix</span>
+                    <a class="card-img-wrap" href="https://docs.google.com/document/d/1g6xpgjGblsisz6WOIvfAjcORnT2F8TtlkwaObCe58R8/edit?usp=sharing" target="_blank">
+                        <img src="img/Grand Prix.png" alt="Grand Prix">
+                    </a>
+                    <span class="card-chevron">⌄</span>
                 </div>
+                <div class="card-body"><div class="card-body-inner">
+                    <p class="card-desc">Projeto Grand Prix desenvolvido no curso técnico.</p>
+                    <div class="skills-tag"><strong>Habilidades:</strong> —</div>
+                    <a class="card-link" href="https://docs.google.com/document/d/1g6xpgjGblsisz6WOIvfAjcORnT2F8TtlkwaObCe58R8/edit?usp=sharing" target="_blank">↗ Ver documento</a>
+                </div></div>
             </div>
         </div>
     </div>
-    <!-- 2º TRIMESTRE -->
+ 
     <div id="tecnico-t2" class="trimestre">
-        <!--AV1-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV1</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV2-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV2</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV3-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV3</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV1</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV1"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV2</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV2"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV3</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV3"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
         </div>
     </div>
-    <!-- 3º TRIMESTRE -->
+ 
     <div id="tecnico-t3" class="trimestre">
-        <!--AV1-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV1</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV2-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV2</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
-        </div>
-        <!--AV3-->
-        <div class="trabalho" onclick="abrirTrabalho(this)">
-            <div class="titulo">AV3</div>
-            <div class="conteudo">
-                <a href="https://chatgpt.com/" target="_blank">
-                    <img src="img/Estatica.png" width="200">
-                </a>
-                <div class="descrisao">
-                    <h3>
-                    </h3>
-                    <h2><b>Habilidades Trabalhadas:</b></h2>
-                </div>
-            </div>
+        <div class="cards-grid">
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV1</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV1"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV2</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV2"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
+            <div class="card" onclick="abrirCard(this)"><div class="card-header"><span class="card-title">AV3</span><span class="card-chevron">⌄</span></div><div class="card-body"><div class="card-body-inner"><img src="img/Estatica.png" alt="AV3"><p class="card-desc">Em breve.</p><div class="skills-tag"><strong>Habilidades:</strong> —</div></div></div></div>
         </div>
     </div>
-    </section>
-    </main>
-
-    <script src="script.js"></script>
-    </body>
+</section>
+ 
+</div><!-- #content -->
+ 
+<script src="script.js"></script>
+</body>
 </html>
+ 
